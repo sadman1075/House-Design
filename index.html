@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/d8708e9641.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <style>
+        .font {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        "button1": "#ABEF5F",
+                        "button2": "rgba(171, 239, 95, 0.5)",
+                        "nav-button": "#737373"
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="font">
+
+    <header class="ml-4 mr-4 lg:ml-32 lg:mr-32">
+        <div>
+            <div class="navbar bg-white">
+                <div class="navbar-start">
+                    <div class="dropdown ">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content white rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a class="text-black text-base">Home</a></li>
+                            <li><a class="text-nav-button text-base">Services</a></li>
+                            <li><a class="text-nav-button text-base">Portfolio</a></li>
+                            <li><a class="text-nav-button text-base">Blogs</a></li>
+                            <li><a class="text-nav-button text-base">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex gap-3 items-center text-2xl  ">
+                      
+                        <button class="px-2 bg-button1 rounded-full ">
+                            <i class="fa-solid fa-arrow-up transform rotate-45"></i>
+                        </button>
+
+                        <p class="font-extrabold text-2xl">Rinterio</p>
+                       
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-black text-base">Home</a></li>
+                        <li><a class="text-nav-button text-base">Services</a></li>
+                        <li><a class="text-nav-button text-base">Portfolio</a></li>
+                        <li><a class="text-nav-button text-base">Blogs</a></li>
+                        <li><a class="text-nav-button text-base">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end ">
+                    <div class="hidden  flex items-center  lg:block">
+
+                        <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                        <i class="fa-solid fa-cart-shopping text-xl ml-4"></i>
+                        <button class="btn bg-button1 text-md font-extrabold rounded-3xl ml-4">Book Consult <i
+                                class="fa-solid fa-circle-arrow-up text-lg transform rotate-45"></i></button>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+</body>
+
+</html>
